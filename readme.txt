@@ -9,4 +9,4 @@ Change 4.
 Change 5.
 modify mater branch to see diff.
 test for conflict.the 2nd time.
-
+test for --no-ff mode.
