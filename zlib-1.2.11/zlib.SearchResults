@@ -1,0 +1,47 @@
+---- ZLIB_VERSION Matches (46 in 16 files) ----
+CMakeLists.txt:string(REGEX REPLACE ".*#define[ \t]+ZLIB_VERSION[ \t]+\"([-0-9A-Za-z.]+)\".*"
+Deflate.c:    static const char my_version[] = ZLIB_VERSION;
+Example.c (test):    static const char* myVersion = ZLIB_VERSION;
+Example.c (test):    } else if (strcmp(zlibVersion(), ZLIB_VERSION) != 0) {
+Example.c (test):            ZLIB_VERSION, ZLIB_VERNUM, zlibCompileFlags());
+Example.pas (contrib\pascal):  if zlibVersion^ <> ZLIB_VERSION[1] then
+Infback.c:    if (version == Z_NULL || version[0] != ZLIB_VERSION[0] ||
+Infback9.c (contrib\infback9):    if (version == Z_NULL || version[0] != ZLIB_VERSION[0] ||
+Infback9.h (contrib\infback9):        ZLIB_VERSION, sizeof(z_stream))
+Infcover.c (test):    ret = inflateInit_(&strm, ZLIB_VERSION - 1, (int)sizeof(z_stream));
+Inflate.c:    if (version == Z_NULL || version[0] != ZLIB_VERSION[0] ||
+Readme.txt (contrib\delphi):- The zlib_version constant is updated.
+Zlib.h:#define ZLIB_VERSION "1.2.11"
+Zlib.h:#define zlib_version zlibVersion()
+Zlib.h:/* The application can compare zlibVersion and ZLIB_VERSION for consistency.
+Zlib.h:   Z_VERSION_ERROR if the zlib library version (zlib_version) is incompatible
+Zlib.h:   with the version assumed by the caller (ZLIB_VERSION).  msg is set to null
+Zlib.h:   method), or Z_VERSION_ERROR if the zlib library version (zlib_version) is
+Zlib.h:   incompatible with the version assumed by the caller (ZLIB_VERSION).  msg is
+Zlib.h:          deflateInit_((strm), (level), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:          inflateInit_((strm), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:                        (strategy), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:          inflateInit2_((strm), (windowBits), ZLIB_VERSION, \
+Zlib.h:                           ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:          deflateInit_((strm), (level), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:          inflateInit_((strm), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:                        (strategy), ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.h:          inflateInit2_((strm), (windowBits), ZLIB_VERSION, \
+Zlib.h:                           ZLIB_VERSION, (int)sizeof(z_stream))
+Zlib.inc (os400):      *             inflateInit(...: ZLIB_VERSION: %size(z_stream))
+Zlib.inc (os400):     D ZLIB_VERSION    C                   '1.2.11'
+ZLib.pas (contrib\delphi):  zlib_version = '1.2.11';
+ZLib.pas (contrib\delphi):    CCheck(deflateInit_(strm, Z_BEST_COMPRESSION, zlib_version, sizeof(strm)));
+ZLib.pas (contrib\delphi):    DCheck(inflateInit_(strm, zlib_version, sizeof(strm)));
+ZLib.pas (contrib\delphi):  DCheck(inflateInit_(strm, zlib_version, sizeof(strm)));
+ZLib.pas (contrib\delphi):  CCheck(deflateInit_(FZRec, Levels[CompressionLevel], zlib_version, sizeof(FZRec)));
+ZLib.pas (contrib\delphi):  DCheck(inflateInit_(FZRec, zlib_version, sizeof(FZRec)));
+Zlib1.rc (win32):      VALUE "FileVersion",	ZLIB_VERSION "\0"
+Zlib1.rc (win32):      VALUE "ProductVersion",	ZLIB_VERSION "\0"
+Zlibpas.pas (contrib\pascal):  ZLIB_VERSION = '1.2.11';
+Zlibpas.pas (contrib\pascal):  Result := deflateInit_(strm, level, ZLIB_VERSION, sizeof(z_stream));
+Zlibpas.pas (contrib\pascal):                          ZLIB_VERSION, sizeof(z_stream));
+Zlibpas.pas (contrib\pascal):  Result := inflateInit_(strm, ZLIB_VERSION, sizeof(z_stream));
+Zlibpas.pas (contrib\pascal):  Result := inflateInit2_(strm, windowBits, ZLIB_VERSION, sizeof(z_stream));
+Zlibpas.pas (contrib\pascal):                             ZLIB_VERSION, sizeof(z_stream));
+Zutil.c:    return ZLIB_VERSION;
